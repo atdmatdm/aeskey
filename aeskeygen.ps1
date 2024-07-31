@@ -22,7 +22,8 @@ for($i=1; $i -lt 11; $i++){
 }
 
 function Reperat {
-	 $continue = Read-Host -Prompt "Continue? [y/n]"
+	 Write-Host "Continue? [y/n]"  -ForegroundColor White -BackgroundColor Red
+	 $continue = Read-Host 
 	if ( $continue -eq 'y' ) { 
 		Out-File -InputObject $inline  -FilePath $outfilepatch -Append
 		Get-Aeskey
@@ -31,5 +32,5 @@ function Reperat {
 }
 Get-Aeskey
 Reperat
-Write-Host "Bye"
+Write-Host "Bye" -ForegroundColor DarkGreen -BackgroundColor White
 CMD /c PAUSE
