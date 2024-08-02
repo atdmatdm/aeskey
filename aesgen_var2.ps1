@@ -1,7 +1,7 @@
 ## Editing this file for best
 ## run as admin  " Set-ExecutionPolicy -Scope CurrentUser RemoteSigned "
 
-[Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("windows-1251")
+[Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("cp866")
 
 $random = [System.Security.Cryptography.RandomNumberGenerator]::Create();
 $datetime = Get-Date
